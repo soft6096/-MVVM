@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WorksCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kue-qP-Toy">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kue-qP-Toy" secondAttribute="height" multiplier="1:1" id="0TH-Pv-jKH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUC-w2-3Et">
+                        <rect key="frame" x="10" y="101" width="100" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uty-Az-R9k">
+                        <rect key="frame" x="10" y="121" width="90" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kue-qP-Toy" secondAttribute="trailing" id="5PT-sx-DeP"/>
+                <constraint firstItem="kue-qP-Toy" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="66x-ZE-aDB"/>
+                <constraint firstItem="kue-qP-Toy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Kxz-5G-FV7"/>
+                <constraint firstAttribute="bottom" secondItem="zUC-w2-3Et" secondAttribute="bottom" constant="28" id="hch-ts-ofO"/>
+                <constraint firstAttribute="bottom" secondItem="Uty-Az-R9k" secondAttribute="bottom" constant="8" id="kzq-FV-dPo"/>
+            </constraints>
+            <connections>
+                <outlet property="_artist" destination="zUC-w2-3Et" id="FpP-jF-GcN"/>
+                <outlet property="_name" destination="Uty-Az-R9k" id="h5O-aj-fcw"/>
+                <outlet property="_picture" destination="kue-qP-Toy" id="GxN-la-nYU"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

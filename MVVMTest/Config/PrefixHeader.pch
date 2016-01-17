@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  MVVMTest
+//
+//
+
+#ifndef MVVMTest_PrefixHeader_pch
+#define MVVMTest_PrefixHeader_pch
+
+#import"AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "Config.h"
+
+#import "NetRequestClass.h"
+#import "SVProgressHUD.h"
+#endif
